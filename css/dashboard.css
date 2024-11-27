@@ -1,0 +1,198 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff8c42, #ffad60);
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+    background: #ff8c42;
+    padding: 4rem 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background: #333;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #ff8c42;
+    transform: translateY(-5px);
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    background: #fff;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(-20px);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.container h2 {
+    font-size: 3rem;
+    color: #ff8c42;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.container p {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+table th, table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ff8c42;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+table td {
+    color: #333;
+}
+
+/* Button styles */
+.container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ff8c42;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.container a:hover {
+    background-color: #e76f51;
+    color: #fff;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cancel-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn:hover {
+    background-color: #ff1a1a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+        font-size: 1.2rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .container {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    .container h2 {
+        font-size: 2rem;
+    }
+
+    .container a {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    table th, table td {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}

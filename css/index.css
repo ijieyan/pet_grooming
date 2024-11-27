@@ -1,0 +1,296 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff8c42, #ffad60);
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+    background: #ff8c42;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation */
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    background: #333;
+    border-radius: 25px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #ff8c42;
+    transform: translateY(-5px);
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(-20px);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #ff8c42;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.container p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+/* Grooming Packages Table */
+.grooming-table {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Table Headers */
+.grooming-table th {
+    background-color: #ff8c42;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Table Data Cells */
+.grooming-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Hover Effect for Rows */
+.grooming-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Even Row Styling for Better Contrast */
+.grooming-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* First Column Styling */
+.grooming-table td:first-child {
+    font-weight: 600;
+    color: #ff8c42;
+}
+
+/* Last Column Styling (Price) */
+.grooming-table td:last-child {
+    text-align: right;
+    font-weight: 600;
+    color: #2a9d8f;
+}
+
+/* Table Container (for spacing) */
+.grooming-table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.container a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ff8c42;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+.container a:hover {
+    background-color: #e76f51;
+    color: #fff;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .container {
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container a {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .grooming-table-wrapper {
+        padding: 1rem;
+    }
+
+    .grooming-table {
+        width: 100%;
+    }
+
+    .grooming-table td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid #ddd;
+        text-align: right;
+    }
+
+    .grooming-table td:first-child {
+        text-align: left;
+        font-weight: 600;
+        color: #ff8c42;
+    }
+
+    .grooming-table td:last-child {
+        text-align: left;
+        color: #2a9d8f;
+    }
+}
+
+/* General footer styling */
+footer {
+    background: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 2rem 0; /* Vertical padding */
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem; /* Push footer down */
+}
+
+/* Container for the credits content */
+.credits-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Stylize the 'created by' part */
+footer strong {
+    color: #ff8c42; /* Highlight creator's name */
+    font-size: 1.2rem;
+}
+
+/* Add some hover effect for text */
+footer p:hover {
+    color: #e76f51; /* Hover color */
+    transition: color 0.3s ease;
+}
+
+/* Optional - Add gradient background for more design */
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff8c42, #ffad60);
+    z-index: -1; /* Place gradient behind the text */
+    opacity: 0.2; /* Make gradient subtle */
+}
+
+/* Mobile-responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: 1.5rem 0; /* Less padding on small screens */
+    }
+
+    .credits-content {
+        font-size: 1rem;
+    }
+}

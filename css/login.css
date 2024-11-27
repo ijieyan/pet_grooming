@@ -1,0 +1,154 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff8c42, #ffad60);
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Header styles */
+header {
+    background: #ff8c42;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form container */
+.container {
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2.5rem;
+    background: #fff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(-20px);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.container h2 {
+    font-size: 2rem;
+    color: #ff8c42;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.container p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    background: #f7f7f7;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input[type="text"]:focus,
+.container input[type="password"]:focus {
+    border-color: #ff8c42;
+    box-shadow: 0 0 5px rgba(255, 140, 66, 0.5);
+    outline: none;
+}
+
+.container input[type="submit"] {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #ff8c42;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container input[type="submit"]:hover {
+    background: #e76f51;
+    transform: scale(1.05);
+}
+
+.container a {
+    text-decoration: none;
+    color: #ff8c42;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.container a:hover {
+    color: #e76f51;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin-top: 3rem;
+        padding: 1.5rem;
+    }
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
+
+    .container form {
+        gap: 1rem;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"],
+    .container input[type="submit"] {
+        font-size: 1rem;
+    }
+}
